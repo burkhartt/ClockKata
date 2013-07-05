@@ -1,0 +1,4 @@
+c:\users\tim.burkhart\documents\visual studio 2010\Projects\Clock\Clock\bin\Debug\Clock.exe
+c:\users\tim.burkhart\documents\visual studio 2010\Projects\Clock\Clock\bin\Debug\Clock.pdb
+c:\users\tim.burkhart\documents\visual studio 2010\Projects\Clock\Clock\obj\x86\Debug\Clock.exe
+c:\users\tim.burkhart\documents\visual studio 2010\Projects\Clock\Clock\obj\x86\Debug\Clock.pdb
