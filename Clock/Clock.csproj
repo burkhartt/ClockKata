@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,28 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StringDeterminer.cs" />
     <Compile Include="Numbers\AsciiNumber.cs" />
     <Compile Include="Numbers\ClockDigit.cs" />
-    <Compile Include="Numbers\ClockDigitA.cs" />
-    <Compile Include="Numbers\ClockDigitColon.cs" />
-    <Compile Include="Numbers\ClockDigitEight.cs" />
-    <Compile Include="Numbers\ClockDigitFive.cs" />
-    <Compile Include="Numbers\ClockDigitForwardSlash.cs" />
-    <Compile Include="Numbers\ClockDigitFour.cs" />
-    <Compile Include="Numbers\ClockDigitHyphen.cs" />
-    <Compile Include="Numbers\ClockDigitM.cs" />
-    <Compile Include="Numbers\ClockDigitNine.cs" />
-    <Compile Include="Numbers\ClockDigitOne.cs" />
-    <Compile Include="Numbers\ClockDigitOpenParenthesis.cs" />
-    <Compile Include="Numbers\ClockDigitP.cs" />
-    <Compile Include="Numbers\ClockDigitPeriod.cs" />
-    <Compile Include="Numbers\ClockDigitSpace.cs" />
-    <Compile Include="Numbers\ClockNumbers.cs" />
-    <Compile Include="Numbers\ClockDigitSeven.cs" />
-    <Compile Include="Numbers\ClockDigitSix.cs" />
-    <Compile Include="Numbers\ClockDigitThree.cs" />
-    <Compile Include="Numbers\ClockDigitTwo.cs" />
-    <Compile Include="Numbers\ClockDigitZero.cs" />
+    <Compile Include="Numbers\GenericDigit.cs" />
     <Compile Include="Outputters\ClockWriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

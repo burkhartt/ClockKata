@@ -13,9 +13,9 @@ namespace Clock.Outputters
             this.writerDelegate = writerDelegate;
         }
 
-        public void Write(string character, IEnumerable<AsciiNumber> asciiNumbers)
+        public void Write(string character, AsciiNumberRows asciiNumbers)
         {
-            for (var i = 0; i < 5; i++)
+            for (var i = 0; i < asciiNumbers.Rows; i++)
             {                
                 writerDelegate(asciiNumbers.Select(asciiNumber => asciiNumber.GetLine(i).Replace("#", character)).Aggregate("", (current, line) => current + (line + " ")));
             }

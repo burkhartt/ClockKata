@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Linq;
+using System.Net.Mime;
+using System.Threading;
 using Clock.Numbers;
 using Clock.Outputters;
 
@@ -10,16 +13,18 @@ namespace Clock
     {
         private static void Main()
         {
-            var clockNumbers = new ClockNumbers();
-            var clockWriter = new ClockWriter(ConsoleWriter);
+            var clockWriter = new ClockWriter(ConsoleWriter);            
 
-            var timeAscii = clockNumbers.GetAscii(DateTime.Now.ToString("H:mm:ss.fff tt"));
-            clockWriter.Write("#", timeAscii);
+            while (true)
+            {
+                Console.Clear();
 
-            var dateAscii = clockNumbers.GetAscii(DateTime.Now.ToString("M/d/yyyy"));
-            clockWriter.Write("#", dateAscii);
+                var stringDeterminer = new StringDeterminer();
+                var ascii = stringDeterminer.GetAscii(DateTime.Now.ToString("H:mm:ss"));
 
-            Console.ReadKey();
+                clockWriter.Write("#", ascii);
+                Thread.Sleep(1000);
+            }
         }
 
         private static void ConsoleWriter(string text)

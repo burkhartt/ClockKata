@@ -15,5 +15,10 @@ namespace Clock.Numbers
         {
             return textNumber.Split(new [] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries)[line];
         }
+
+        public int GetRows()
+        {
+            return textNumber.Split(new[] {"\r\n"}, StringSplitOptions.RemoveEmptyEntries).Length;
+        }
     }
 }
